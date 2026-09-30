@@ -12,7 +12,7 @@ public class EnemyHealth : MonoBehaviour
     public float MaxHealth => maxHealth;
     public bool IsDead => currentHealth <= 0f;
 
-    // Llamado desde afuera (por ejemplo, PlayerShooting via SendMessage) cuando recibe daño.
+    // Llamado desde afuera (por ejemplo, PlayerShooting via SendMessage) cuando recibe dano.
     public void TakeDamage(float amount)
     {
         if (IsDead) return;

@@ -42,7 +42,7 @@ public class EnemyChaser : MonoBehaviour
         rb.MovePosition(rb.position + direction * speed * Time.fixedDeltaTime);
     }
 
-    // Dibuja el rango de detección en la Scene cuando el enemigo está seleccionado.
+    // Dibuja el rango de deteccion en la Scene cuando el enemigo esta seleccionado.
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;

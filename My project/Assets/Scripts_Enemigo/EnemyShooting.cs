@@ -1,6 +1,6 @@
 using UnityEngine;
 
-// Ataque del enemigo tipo pistola no automática (un disparo, cooldown, siguiente disparo),
+// Ataque del enemigo tipo pistola no automatica (un disparo, cooldown, siguiente disparo),
 // usando Physics.Raycast. Balas ilimitadas: no hay contador ni recarga.
 public class EnemyShooting : MonoBehaviour
 {
@@ -34,7 +34,7 @@ public class EnemyShooting : MonoBehaviour
     {
         Vector3 direction = (target.position - transform.position).normalized;
 
-        // El Raycast solo llega hasta "range": si el jugador está más lejos, ni siquiera lo detecta.
+        // El Raycast solo llega hasta "range": si el jugador está mas lejos, ni siquiera lo detecta.
         if (Physics.Raycast(transform.position, direction, out RaycastHit hit, range))
         {
             if (hit.collider.CompareTag("Player"))
